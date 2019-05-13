@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 
 
 
-export const About = () => (
+export const Galerai = () => (
         <div>
-   <h2>About-me page</h2>
+   <h2>Contact page</h2>
    <p>Не забудь поставить лайк и подписаться на канал! </p>
    <p>Не забудь поставить лайк и подписаться на канал! </p>
    <p>Не забудь поставить лайк и подписаться на канал! </p>

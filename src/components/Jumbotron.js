@@ -6,9 +6,7 @@ import image from '../Images/image.jpg';
 
 const Styles = styled.div `
 .jumbo {
-    background: url (${{image}}) no-repeat fixed bottom;
-    background-size:cover;
-    color:white;
+    background-img: url ($ {image.jpg}) ;
     hight:200px;
     position:relative;
     z-index:-2;
@@ -30,12 +28,11 @@ const Styles = styled.div `
 export const Jumbotron = () =>(
 <Styles>
     <Jumbo fluid className="jumbo">
-<div className="overlay"> </div>
-
-<Container>
-    <h1>Welcome</h1>
-    <p>Learn to code</p>
-</Container>
-    </Jumbo>
+      <div className="overlay"> </div>
+     <Container>
+        <h1>Welcome</h1>
+          <p>Learn to code</p>
+     </Container>
+  </Jumbo>
 </Styles>
 )

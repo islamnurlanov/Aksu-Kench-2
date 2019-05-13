@@ -1,15 +1,12 @@
 import React from 'react'
 
 
-export const Home = () => (
+
+export const Akci = () => (
         <div>
-   <h2>Hello World</h2>
+   <h2>Contact page</h2>
    <p>Не забудь поставить лайк и подписаться на канал! </p>
    <p>Не забудь поставить лайк и подписаться на канал! </p>
    <p>Не забудь поставить лайк и подписаться на канал! </p>
         </div>
 )
-
-
-        
-    
