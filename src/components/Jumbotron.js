@@ -2,11 +2,13 @@
 import React from 'react';
 import {Jumbotron as Jumbo, Container} from 'react-bootstrap';
 import styled from 'styled-components';
-import image from '../Images/image.jpg';
+import Image from '../Images/image.jpg';
+
 
 const Styles = styled.div `
+
 .jumbo {
-    background-img: url ($ {image.jpg}) ;
+    background: url(${Image.jpg}) ;
     hight:200px;
     position:relative;
     z-index:-2;
