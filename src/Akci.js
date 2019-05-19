@@ -30,7 +30,12 @@ const Styles = styled.div `
         border:1px solid #888;
         width:80%;
 }
-
+.close{
+        color:#aaa;
+        float:right;
+        font-size:28px;
+        font-weight:bold;
+}
 `;
 
 
