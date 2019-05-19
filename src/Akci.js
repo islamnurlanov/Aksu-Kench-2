@@ -12,14 +12,24 @@ const Styles = styled.div `
         border:1px solid black
         
 }
+
 `;
 
 
-export const Akci = () => (
-        <Styles>
+export const Akci = (props) => (
+       
+       <Styles>
         <div>
-            <caption>Прайс листы</caption>  
+            <h1>Прайс листы</h1>  
+          
             <button>Калькулятор</button>
+           <div id="myModal" className="modal">
+                <div className="modal-content">
+                        <span className="close">
+                                <p>Modal window!</p>
+                        </span>
+                </div>
+           </div>
    <table className='table'>
            <thead>
                    <tr>

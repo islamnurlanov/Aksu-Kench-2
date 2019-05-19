@@ -19,6 +19,8 @@ const Styles = styled.div`
 `;
 
 
+
+
 export const NavBar = () => (
     <Styles>
         <Navbar expand="sm">

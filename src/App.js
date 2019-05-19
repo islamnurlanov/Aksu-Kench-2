@@ -10,10 +10,13 @@ import {NavBar} from './components/Navbar';
 import {Jumbotron} from './components/Jumbotron';
 import {Akci} from './Akci'
 import {Galerai} from './Galerai'
+import {Dialog} from './components/Dialog'
 class App extends Component {
   render() {
     return (
+      
   <React.Fragment>
+   
     <NavBar/>
     <Jumbotron/>
     <Layout>
@@ -25,6 +28,9 @@ class App extends Component {
           <Route path="/galerai" component={Galerai}/>
           <Route path="/contacts"component={Contacts}/>
          <Route component={NoMatch}/>
+         <Dialog>
+    In this video you're going to learn how to create a dialog box /modal window component in react.
+        </Dialog>
        </Switch>
      </Router>
     </Layout>
