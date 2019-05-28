@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
-
-
+import classes from './Modalst.module.css';
 class Modal extends Component{
 
 
@@ -17,7 +16,7 @@ class Modal extends Component{
          return(
          <div>
              {this.props.children}
-             <div>
+             <div className={classes.Modalst}>
                  <button onClick ={(e) =>  this.onclose(e)}>
                      Close
                  </button>

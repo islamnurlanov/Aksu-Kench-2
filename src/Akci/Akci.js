@@ -27,12 +27,12 @@ import Modal from "../components/Modal/Modal";
              
                <Modal show={this.state.show}
                onClose={this.showModal}>
-                        this massege is from Mo
+                        Это модальное окно
                </Modal>
-       <table>
+       <table className="table">
                <thead>
                        <tr>
-                               <td >Будни</td>
+                               <td className="tabletd">Будни</td>
                                <td  > Выходные</td>
                        </tr>
                </thead>
