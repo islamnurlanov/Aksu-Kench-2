@@ -27,7 +27,7 @@ import Modal from "../components/Modal/Modal";
              
                <Modal show={this.state.show}
                onClose={this.showModal}>
-                        Это модальное окно
+                        <input type="number"></input>
                </Modal>
        <table className="table">
                <thead>
