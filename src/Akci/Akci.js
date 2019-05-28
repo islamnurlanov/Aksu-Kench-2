@@ -1,16 +1,18 @@
-import React from 'react';
-import Akcist from './Akcist.module.css'
-import Modal from './components/Modal/Modal';
+import React, {Component} from 'react';
+import classes from './Akcist.module.css';
+import Modal from "../components/Modal/Modal";
 
 
 
 
-export default class Akci extends React.Component {
+ class Akci extends Component {
       
      
                state = {
                        show: false
                }
+
+               
                 showModal = () =>{
                this.setState({
                        ...this.state,
@@ -19,8 +21,7 @@ export default class Akci extends React.Component {
        }
        render(){
                return(
-                       <Akcist>
-                <div>
+                <div className={classes.Akcist}>
                 <h1>Прайс листы</h1>  
              <input type="button" onClick={this.showModal} value ="Show Modal"/>
              
@@ -28,31 +29,31 @@ export default class Akci extends React.Component {
                onClose={this.showModal}>
                         this massege is from Mo
                </Modal>
-       <table className={Akcist.table}>
+       <table>
                <thead>
                        <tr>
-                               <td className={Akcist.tabletd}>Будни</td>
-                               <td  className={Akcist.tabletd}> Выходные</td>
+                               <td >Будни</td>
+                               <td  > Выходные</td>
                        </tr>
                </thead>
                <tbody>
                        <tr>
-                               <td  className={Akcist.tabletd}> 200сом 1час</td>
-                               <td  className={Akcist.tabletd}>100сом 1час</td>
+                               <td  > 200сом 1час</td>
+                               <td  >100сом 1час</td>
                        </tr>
                </tbody>
                <tfoot>
                        <tr>
-                               <td className={Akcist.tabletd}>400сом 2час</td>
-                               <td  className={Akcist.tabletd}>300сом 2 час</td>
+                               <td >400сом 2час</td>
+                               <td >300сом 2 час</td>
                        </tr>
                </tfoot>
        </table>
        
             </div>
-            </Akcist>
                )
        }
        
         
 }
+export default Akci;

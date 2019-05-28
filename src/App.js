@@ -8,7 +8,7 @@ import {NoMatch} from './NoMatch';
 import {Layout} from './components/Layout';
 import {NavBar} from './components/Navbar';
 import {Jumbotron} from './components/Jumbotron';
-import Akci from './Akci'
+import Akci from '../src/Akci/Akci';
 import {Galerai} from './Galerai'
 
 class App extends Component {
@@ -28,9 +28,6 @@ class App extends Component {
           <Route path="/galerai" component={Galerai}/>
           <Route path="/contacts"component={Contacts}/>
          <Route component={NoMatch}/>
-       
-   
-        
        </Switch>
      </Router>
     </Layout>
